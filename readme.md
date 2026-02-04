@@ -52,29 +52,6 @@ The original CSV file was downloaded from Kaggle and subsequently cleaned and pr
 
 ---
 
-## Project Structure
-
-nyc-housing-market-analysis/
-│
-├── data/
-│ └── nyc_housing_base.csv
-│
-├── notebooks/
-│ └── nyc_housing_analysis.ipynb
-│
-├── sql/
-│ ├── nyc_housing.db
-│ └── queries.sql
-│
-├── reports/
-│ ├── summary.md
-│ └── figures/
-│ ├── price_distribution.png
-│ ├── sales_by_location.png
-│ 
-│
-├── README.md
-└── requirements.txt
 
 ## Technologies used 
 
