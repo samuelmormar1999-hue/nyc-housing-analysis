@@ -1,69 +1,34 @@
 
-# NYC Housing Market Analysis
+# NYC Housing Market Analysis (Python + SQL)
 
-## Overview
-This project analyzes housing transactions dataset obtained from **Kaggle**.
-The dataset contains information such as:
-- Sale price
-- Location category (borough codes)
-- Building size and surface area
-- Additional building characteristics
+## ES
 
-The original CSV file was downloaded from Kaggle and subsequently cleaned and prepared for analysis.
+¡Hola! 👋  
 
----
+Este proyecto presenta un **análisis exploratorio del mercado inmobiliario de Nueva York** a partir de un dataset de transacciones obtenido de Kaggle. El objetivo es entender **cómo varían los precios y el volumen de ventas por borough** e identificar patrones relevantes del mercado.
 
-## Objectives
-- Understand how housing prices are distributed across the NYC market.
-- Identify differences in transaction volume across location categories.
-- Compare price levels and affordability between cities.
-- Distinguish between volume-driven and value-driven housing markets.
+### Qué incluye
+- Limpieza y EDA en **Python (pandas + matplotlib)**
+- Análisis con **SQL (SQLite)** para responder preguntas de mercado
+- Resultados documentados en el repositorio (notebook y consultas SQL)
+
+### Tecnologías
+- Python: pandas, matplotlib  
+- SQL: SQLite
 
 ---
 
-## Methodology
+## EN
 
-### 1. Exploratory Data Analysis (Python)
-- Data inspection and cleaning using **pandas**
-- Analysis of price distributions using histograms and boxplots
-- Comparison of housing prices and transaction volumes across location categories
-- Visualization of key patterns using **matplotlib**
+Hi! 👋  
 
-### 2. SQL-Based Market Analysis
-- The cleaned dataset was stored in a local **SQLite** database.
-- SQL queries were used to simulate realistic market-driven questions, such as:
-  - Where is housing market activity concentrated?
-  - Which cities show higher average housing prices?
-  - Are there high-price, low-volume markets?
-- Queries are documented in `sql/queries.sql`, and selected queries are executed in the notebook to support the analytical narrative.
+This project presents an **exploratory analysis of the New York City housing market** using a transactions dataset from Kaggle. The goal is to understand **how prices and transaction volume vary across boroughs** and identify relevant market patterns.
 
-### 3. Reporting
-- Key findings and market implications are summarized in an executive report located in the `reports/` folder.
-- Final visualizations supporting the conclusions are saved as image files for easy reuse.
+### What’s included
+- Data cleaning and EDA in **Python (pandas + matplotlib)**
+- **SQL (SQLite)** analysis to answer market-oriented questions
+- Outputs documented in the repository (notebook and SQL queries)
 
----
-
-## Key Findings
-- Housing prices are not uniformly inflated across the NYC market.
-- Queens (QN) and Brooklyn (BK) concentrate the highest number of housing transactions, indicating highly liquid markets.
-- Manhattan (MN) represents a high-value, low-volume market, characterized by fewer transactions at significantly higher prices.
-- Bronx (BX) and Staten Island (SI) show lower transaction volumes and more affordable average prices.
-- Significant disparities exist across cities in terms of price levels, price per square foot, and transaction activity.
-
----
-
-
-## Technologies used 
-
-- **Python**
-    - pandas 
-    -matplotlib 
-- **SQL** 
-    -SQLite (via Python standard library)
-
-
-## How to Run the Project
-1. Clone the repository.
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
+### Tech stack
+- Python: pandas, matplotlib  
+- SQL: SQLite
