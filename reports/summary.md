@@ -1,59 +1,39 @@
-# NYC Housing Market – Summary Report
+## ES — Resumen del análisis (Tableau + SQL)
 
-## Objective
-This report summarizes the main findings from an analysis of housing transactions in New York City.  
-The objective is to understand market activity, pricing levels, and structural differences across location categories using transaction data.
+Este proyecto combina visualización en **Tableau** y consultas en **SQL (SQLite)** para analizar el mercado inmobiliario de Nueva York desde tres perspectivas clave: **distribución del precio**, **actividad por borough** y **segmentación entre mercados de volumen y de valor**.
 
----
+### Visualización (Tableau)
+- **Building Age vs Sale Price (scatter):** analiza la relación entre la antigüedad del edificio y el precio de venta, así como la dispersión y posibles outliers.
+- **Distribution Borough (map/heatmap):** muestra la concentración geográfica de las transacciones y precios por zona.
+- Incluye filtro por **Borough** para comparar patrones entre ubicaciones.
 
-## Data Overview
-The analysis is based on historical housing sales data, including information on:
-- Sale prices
-- Location categories (borough codes)
-- Building characteristics and surface area
+### Preguntas de negocio respondidas con SQL
 
-The dataset was cleaned and analyzed using Python for exploratory analysis and SQL for market-oriented queries.
+1. **¿Dónde se concentra la liquidez del mercado inmobiliario?**  
+   Se analiza el número de transacciones por borough para identificar las zonas con mayor actividad.
 
----
+2. **¿Qué boroughs presentan los precios medios más altos?**  
+   Se comparan los precios medios de venta para detectar mercados de alto valor.
 
-## Key Findings
+3. **¿Existen mercados de alto precio y bajo volumen?**  
+   Se evalúa conjuntamente el volumen de transacciones y el precio medio para identificar mercados exclusivos.
 
-- **Housing prices are not uniformly inflated across the market.**  
-  While high-value properties exist, most transactions are concentrated within moderate price ranges, indicating a heterogeneous but coherent housing market.
+## EN — Analysis Summary (Tableau + SQL)
 
-- **Queens (QN) and Brooklyn (BK) concentrate the highest transaction volumes.**  
-  These locations account for a significantly larger share of housing sales, suggesting highly liquid and active residential markets.
+This project combines **Tableau visualizations** and **SQL (SQLite) queries** to analyze the New York City housing market from three key perspectives: **price distribution**, **activity by borough**, and **segmentation between volume-driven and value-driven markets**.
 
-- **Manhattan (MN) represents a high-value, low-volume market.**  
-  Despite having fewer transactions, Manhattan shows the highest average housing prices, indicating a more exclusive market segment.
+### Visualization (Tableau)
+- **Building Age vs Sale Price (scatter):** analyzes the relationship between building age and sale price, including dispersion and potential outliers.
+- **Distribution Borough (map/heatmap):** shows the geographic concentration of transactions and prices by area.
+- Includes a **Borough** filter to compare patterns across locations.
 
-- **Bronx (BX) and Staten Island (SI) show lower activity and lower average prices.**  
-  These markets present fewer transactions and more affordable price levels relative to other locations.
+### Business questions answered with SQL
 
-- **Clear disparities exist across cities in terms of price levels, price per square foot, and transaction volume**, highlighting the structural segmentation of the NYC housing market.
+1. **Where is housing market liquidity concentrated?**  
+   The number of transactions by borough is analyzed to identify the most active areas.
 
----
+2. **Which boroughs show the highest average prices?**  
+   Average sale prices are compared to identify high-value markets.
 
-## Market Implications
-
-- **Liquidity differs substantially across locations.**  
-  High-volume markets such as Queens and Brooklyn may be more attractive for investors seeking faster turnover and market depth.
-
-- **High-price, low-volume markets suggest exclusivity rather than broad accessibility.**  
-  Manhattan’s profile reflects a premium market where value is concentrated in fewer transactions.
-
-- **Affordability varies significantly by location category**, which has implications for housing policy, urban planning, and buyer decision-making.
-
----
-
-## Limitations
-
-- The analysis is based on historical transaction data and does not capture temporal trends or market dynamics over time.
-- Socioeconomic variables (e.g., income levels, demographics) are not included and therefore affordability is inferred only from housing prices.
-- Location categories are analyzed as defined in the dataset and may not fully align with official administrative boundaries.
-
----
-
-## Conclusion
-The NYC housing market is highly segmented, with distinct profiles across location categories.  
-Differences in transaction volume and pricing levels suggest the coexistence of volume-driven markets and value-driven markets within the same metropolitan area, underscoring the complexity of housing dynamics in New York City.
+3. **Are there high-price, low-volume markets?**  
+   Transaction volume and average price are analyzed together to detect exclusive market segments.
